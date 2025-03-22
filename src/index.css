@@ -4,20 +4,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #030014;
+  --color-primary: #160000;
 
-  --color-light-100: #cecefb;
-  --color-light-200: #a8b5db;
+  --color-light-100: #FECECE;
+  --color-light-200: #DDA7A7;
 
-  --color-gray-100: #9ca4ab;
+  --color-gray-100: #AD9C9C;
 
-  --color-dark-100: #0f0d23;
+  --color-dark-100: #260D0D;
 
   --font-dm-sans: DM Sans, sans-serif;
 
   --breakpoint-xs: 480px;
 
-  --background-image-hero-pattern: url("/hero-bg.png");
+  --background-image-hero-pattern: url("/hero-bgg.jpg");
 }
 
 @layer base {
@@ -50,7 +50,7 @@
 
 @layer components {
   .pattern {
-    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
+    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0 ;
   }
 
   .wrapper {
@@ -143,11 +143,11 @@
 }
 
 @utility text-gradient {
-  @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-[#ffc7d6] to-[#ff8b8b] bg-clip-text text-transparent;
 }
 
 @utility fancy-text {
-  -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
+  -webkit-text-stroke: 5px #FBCECE;
   font-size: 190px;
   font-family: "Bebas Neue", sans-serif;
 }
